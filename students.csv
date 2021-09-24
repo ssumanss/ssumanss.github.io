@@ -1,30 +1,31 @@
 SNo,Name,ImageID,Total,Attempted,Rank
 1,HIMANSHU KUMAR PREMI,himanshu-kumar-premi25,100,10,1
-2,AARUSHI SINGH,aarushi-singh28,99,10,2
-3,KUNAL KUMAR VATSA,kunal-kumar-vatsa20,99,10,2
-4,KUMARI SHALINI SAHAY,kumari-shalini-sahay23,99,10,2
-5,SARIKA MISHRA ,sarika-mishra-25,99,10,2
-6,UJJWAL KUMAR,ujjwal-kumar26,99,10,2
-7,PRAVEEN KUMAR,praveen-kumar28,96,10,3
-8,SHOBHA BHARTI,shobha-bharti27,80,9,4
-9,ASHISH NANDAN,ashish-nandan22,79,10,5
-10,PUJA KUMARI,puja-kumari25,79,9,5
-11,SHWETA KUMARI,shweta-kumari26,79,9,5
-12,KUMARI SONI,kumari-soni25,77,10,6
-13,PRACHI KUMARI,prachi-kumari28,76,10,7
-14,SUDHA KUMARI,sudha-kumari24,71,9,8
-15,GOPAL KUMAR AGRAWAL,gopal-kumar-agrawal29,64,8,9
-16,MONA CHATTERJEE,mona-chatterjee18,47,5,10
-17,NISHA BHARTI,nisha-bharti28,47,5,10
-18,SAJDA ASHRAFI,sajda-ashrafi21,33,4,11
-19,RICHA SIDDHI,richa-siddhi22,28,3,12
-20,RAHUL KUMAR SINGH,rahul-kumar-singh25,12,2,13
-21,NIDHI KUMARI ,nidhi-kumari-28,11,3,14
-22,KUMUD KUMARI,kumud-kumari21,8,1,15
-23,ABHILASHA KUMARI,abhilasha-kumari24,7,1,16
-24,ALKA KUMARI,alka-kumari23,7,1,16
-25,RAKHI,rakhi17,7,1,16
-26,SWATI GHOSHAL,swati-ghoshal23,6,1,17
-27,MD TANWEER HASSAN,md-tanweer-hassan22,5,1,18
-28,ADITYA KUMAR SINGH,aditya-kumar-singh26,3,1,19
-29,SHAHNAZ NASIM ,shahnaz-nasim-26,3,1,19
+2,PRAVEEN KUMAR,praveen-kumar28,100,10,1
+3,AARUSHI SINGH,aarushi-singh28,99,10,2
+4,KUNAL KUMAR VATSA,kunal-kumar-vatsa20,99,10,2
+5,KUMARI SHALINI SAHAY,kumari-shalini-sahay23,99,10,2
+6,SARIKA MISHRA ,sarika-mishra-25,99,10,2
+7,UJJWAL KUMAR,ujjwal-kumar26,99,10,2
+8,SHOBHA BHARTI,shobha-bharti27,80,9,3
+9,ASHISH NANDAN,ashish-nandan22,79,10,4
+10,PUJA KUMARI,puja-kumari25,79,9,4
+11,SHWETA KUMARI,shweta-kumari26,79,9,4
+12,KUMARI SONI,kumari-soni25,77,10,5
+13,PRACHI KUMARI,prachi-kumari28,77,10,5
+14,GOPAL KUMAR AGRAWAL,gopal-kumar-agrawal29,72,9,6
+15,SUDHA KUMARI,sudha-kumari24,71,9,7
+16,NISHA BHARTI,nisha-bharti28,48,5,8
+17,MONA CHATTERJEE,mona-chatterjee18,47,5,9
+18,SAJDA ASHRAFI,sajda-ashrafi21,42,5,10
+19,RICHA SIDDHI,richa-siddhi22,28,3,11
+20,RAHUL KUMAR SINGH,rahul-kumar-singh25,12,2,12
+21,NIDHI KUMARI ,nidhi-kumari-28,11,3,13
+22,KUMUD KUMARI,kumud-kumari21,8,1,14
+23,ABHILASHA KUMARI,abhilasha-kumari24,7,1,15
+24,ALKA KUMARI,alka-kumari23,7,1,15
+25,RAKHI,rakhi17,7,1,15
+26,SWATI GHOSHAL,swati-ghoshal23,6,1,16
+27,MD TANWEER HASSAN,md-tanweer-hassan22,5,1,17
+28,ADITYA KUMAR SINGH,aditya-kumar-singh26,3,1,18
+29,SHAHNAZ NASIM ,shahnaz-nasim-26,3,1,18
+30,SURAJ YADAV,suraj-yadav23,3,1,18
