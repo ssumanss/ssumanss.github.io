@@ -91,7 +91,7 @@ extra_javascript:
 google_analytics: ['UA-140256543-1', 'sandeepsuman.com']
 
 # Copyright
-copyright: 'Copyright &copy; 2016 - 2020 <a href="https://sandeepsuman.com">Sandeep Suman</a>'
+copyright: 'Copyright &copy; 2016 - 2022 <a href="https://sandeepsuman.com">Sandeep Suman</a>'
 
 extra:
   manifest: 'manifest.json'
