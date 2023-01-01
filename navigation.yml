@@ -1,14 +1,5 @@
-nav: 
+# Page tree
+nav:
   - Home: index.md
-  - Quick Start: quickstart-python.md
-  - "Day 1: Variable": 'day1.md'
-  - "Day 2: Libraries": 'day2.md'
-  - "Day 3: External Data": 'day3.md'
-  - "Day 4: List": 'day4.md'
-  - "Day 5: String": 'day5.md'
-  - "Day 6: Vectors": 'day6.md'
-  - "Day 7: Conditional": 'day7.md'
-  - "Day 8: Loops": 'day8.md'
-  - "Day 9: Functions": 'day9.md'
-  - "Day 10: Turtle": 'day10.md'
-  - "Practice Quiz": 'quiz.md'
+  - Getting started:
+    - Course Overview: getting-started/introduction.md
