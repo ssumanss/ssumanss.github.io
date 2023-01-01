@@ -1,10 +1,10 @@
 ---
 ---
 template: home.html
-title: Material for MkDocs
+title: Welcome
 ᴴₒᴴₒᴴₒ: false
 ---
 
-Welcome to Material for MkDocs.
+Welcome to Programming in C.
 
 ---

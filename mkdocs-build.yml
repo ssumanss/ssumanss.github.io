@@ -93,6 +93,7 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - footnotes
 
   - mdx_math: # pip install python-markdown-math
       enable_dollar_delimiter: true
@@ -126,3 +127,5 @@ nav:
   - Home: index.md
   - Getting started:
     - Course Overview: getting-started/introduction.md
+    - Programming: getting-started/programming.md
+    - Feature of C: getting-started/feature.md
