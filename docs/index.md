@@ -1,5 +1,10 @@
 ---
-title: Title
-template: overrides/home.html
+---
+template: home.html
+title: Material for MkDocs
+ᴴₒᴴₒᴴₒ: false
 ---
 
+Welcome to Material for MkDocs.
+
+---
