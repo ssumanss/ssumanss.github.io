@@ -1,7 +1,0 @@
-# Page tree
-nav:
-  - Home: index.md
-  - Getting started:
-    - Course Overview: getting-started/introduction.md
-    - Programming: getting-started/programming.md
-    - Feature of C: getting-started/feature.md
