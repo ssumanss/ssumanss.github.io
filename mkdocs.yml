@@ -126,10 +126,6 @@ extra:
 # Page tree
 nav:
   - Home: index.md
-  - C Programming:
-    - Course Overview: programming-in-c/introduction.md
-    - Programming: programming-in-c/programming.md
-    - Feature of C: programming-in-c/feature.md
   - Linear Algebra:
     - Course Overview: linear-algebra/introduction.md
     - 'Linear Equations': linear-algebra/linear-equations.md
@@ -137,3 +133,7 @@ nav:
     - Assignment: linear-algebra/assignments.md
     - Exam: linear-algebra/exam.md
     - 21-23: linear-algebra/21-23.md
+  - C Programming:
+    - Course Overview: programming-in-c/introduction.md
+    - Programming: programming-in-c/programming.md
+    - Feature of C: programming-in-c/feature.md
