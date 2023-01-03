@@ -1,10 +1,11 @@
-site_name: Programming in C
-site_description: 'This website is dedicated to the course taught in semester IV in the university department of mathematics, Tilka Manjhi Bhagalpur University, Bhagalpur.'
+site_name: Sandeep Suman
+site_description: 'Assistant Professor, TMBU, Bhagalpur'
 site_author: 'Sandeep Suman'
-site_url: 'https://sandeepsuman.com/programming-in-c/'
+site_url: 'https://sandeepsuman.com/'
 
 plugins:
   - search
+  - table-reader
   - minify:
       minify_html: true
 
@@ -18,14 +19,14 @@ plugins:
 theme:
   palette:
     - scheme: default
-      primary: lime
-      accent: orange
+      primary: teal
+      accent: amber
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: 'deep purple'
-      accent: cyan
+      primary: amber
+      accent: teal
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -33,14 +34,14 @@ theme:
   name: material
   custom_dir: 'theme'
   features:
-    # - announce.dismiss
+    - announce.dismiss
     - content.code.annotate
     # - content.tabs.link
     - content.tooltips
     # - header.autohide
     # - navigation.expand
     - navigation.indexes
-    # - navigation.instant
+    - navigation.instant
     # - navigation.prune
     - navigation.sections
     - navigation.tabs
@@ -56,7 +57,7 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: assets/favicon.png
+  favicon: static/images/favicon.ico
   icon:
     logo: logo
 
@@ -108,24 +109,31 @@ markdown_extensions:
 
 extra_javascript:
   - 'https://cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'
-  - 'js/app-local.js'
+  - 'static/js/app.js'
 
 extra_css:
-  - 'stylesheets/extra.css' # depends on theme
+  - 'static/stylesheets/extra.css' # depends on theme
 
 
-# google_analytics: ['UA-140256543-1', 'sandeepsuman.com']
+google_analytics: ['UA-140256543-1', 'sandeepsuman.com']
 
 # Copyright
 copyright: 'Copyright &copy; 2016 - 2023 <a href="https://sandeepsuman.com">Sandeep Suman</a>'
 
 extra:
-  manifest: 'manifest-local.json'
+  manifest: 'manifest.json'
 
 # Page tree
 nav:
   - Home: index.md
-  - Getting started:
-    - Course Overview: getting-started/introduction.md
-    - Programming: getting-started/programming.md
-    - Feature of C: getting-started/feature.md
+  - C Programming:
+    - Course Overview: programming-in-c/introduction.md
+    - Programming: programming-in-c/programming.md
+    - Feature of C: programming-in-c/feature.md
+  - Linear Algebra:
+    - Course Overview: linear-algebra/introduction.md
+    - 'Linear Equations': linear-algebra/linear-equations.md
+    - 'Matrix of Linear Transformation': linear-algebra/matrix-linear-transformation.md
+    - Assignment: linear-algebra/assignments.md
+    - Exam: linear-algebra/exam.md
+    - 21-23: linear-algebra/21-23.md
