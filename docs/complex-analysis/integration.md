@@ -1,7 +1,10 @@
 A contour is a finite collection of paths joined end to end. A path can be represented as a continuous function form an closed iterval to $\mathbb{C}$ as follows 
+
 $$ \gamma: [a~ b]\subset \mathbb{R} \to \mathbb{C}; \quad \gamma = \gamma(t)$$ 
+
 Then the integration of any complex function along this path is is given by 
-$$\int_\gamma f(z)dz = \int_a^b f(t)~\gamma'(t)~dt = \sum_{i=1}^n f(t_i) \left[\gamma(t_i)-\gamma(t_{i-1})\right] $$
+
+$$\int_\gamma f(z)dz = \int_a^b f(t)~\gamma'(t)~dt = \sum_{i=1}^n f(t_i) \left[\gamma(t_i)-\gamma(t_{i-1})\right]$$
 
 **Question:** Find the integration of $f(z)=z^2$ along the parabolic path from $0$ to $1$.
 
