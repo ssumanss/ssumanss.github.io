@@ -6,7 +6,10 @@ site_url: 'https://sandeepsuman.com/'
 plugins:
   - search
   - table-reader
-  - mkdocs-jupyter #pip install mkdocs-jupyter
+  # - mkdocs-jupyter: #pip install mkdocs-jupyter
+  #     show_input: False
+  #     no_input: True
+
   - minify:
       minify_html: true
 
