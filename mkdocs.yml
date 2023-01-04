@@ -120,9 +120,6 @@ google_analytics: ['UA-140256543-1', 'sandeepsuman.com']
 # Copyright
 copyright: 'Copyright &copy; 2016 - 2023 <a href="https://sandeepsuman.com">Sandeep Suman</a>'
 
-extra:
-  manifest: 'manifest.json'
-
 # Page tree
 nav:
   - Home: index.md
