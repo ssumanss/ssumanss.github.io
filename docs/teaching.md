@@ -1,0 +1,27 @@
+## Current Courses 
+
+- [Linear Algebra](linear-algebra/introduction.md) in Semester I
+- [Complex Analysis](complex-analysis/complex-analysis.md) in Semester II
+- [Operation Research](https://sandeepsuman.com/operation-research/) in Semester III
+- [Programming in C](https://sandeepsuman.com/programming-in-c/) in Semester IV
+
+***
+
+## Online Courses
+
+- Online videos can be found on this [YouTube Channel](https://www.youtube.com/channel/UCXSblr5-4bLUBgqxIWaiIdg).
+- Linear Algebra 
+  * [System of Linear Equations](https://www.youtube.com/watch?v=_msI17F-UhQ&list=PLZt5lIVW7jQSmgk5b3FOOnT7kP4mDOs_N)
+  * [Matrix of Linear Transformation](https://www.youtube.com/watch?v=yaKoLp9GhHg&list=PLZt5lIVW7jQSQ4bY1loXYbdiHsx5eulgI)
+
+## Programming Related Courses
+- [Ten Days Workshop on Python 3 for Students](https://sandeepsuman.com/python-workshop/)
+- [Faculty Develpment Programme on **Python 3**](https://sandeepsuman.com/fdp-python-2020/)
+
+***
+
+## Past Courses
+
+- [Abstract Algebra](https://sandeepsuman.com/abstract-algebra/) in semester I
+- [Analytical Mechanics](https://sandeepsuman.com/classical-mechanics/) in Semester III
+- PDE in semester IV
