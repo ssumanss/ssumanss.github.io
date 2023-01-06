@@ -7,8 +7,7 @@ plugins:
   - search
   - table-reader
   # - mkdocs-jupyter: #pip install mkdocs-jupyter
-  #     show_input: False
-  #     no_input: True
+
 
   - minify:
       minify_html: true
@@ -136,6 +135,7 @@ copyright: 'Copyright &copy; 2016 - 2023 <a href="https://sandeepsuman.com">Sand
 # Page tree
 nav:
   - Home: index.md
+  - Teaching: teaching.md
   - Linear Algebra:
     - Course Overview: linear-algebra/introduction.md
     - 'Linear Equations': linear-algebra/linear-equations.md
@@ -164,6 +164,25 @@ nav:
     - Assignments: complex-analysis/assignments.md
     - Exam: complex-analysis/exam.md
     - Video: complex-analysis/video.md
+
+  - Operation Research: 
+    - Course Introduction: operation-research/introduction.md
+    - Linear Programming:
+      - Simplex Algorithm: operation-research/simplex.md
+      - Big M Method: operation-research/bigm.md
+      - Scipy: operation-research/scipy.md
+    - Game Theory: 
+      - Introduction: operation-research/game.md
+      - Definitions: operation-research/basic-definitions.md
+      - Dominant Strategy: operation-research/dominant-strategy.md
+      - Maximin Strategy: operation-research/maximin-strategy.md
+    - Nonlinear Programming:
+      - Unconstrained Optimization: operation-research/unconstrained-optimization.md
+      - Equality Constraints: operation-research/equality-constraints.md
+      - KKT Conditions: operation-research/kkt1.md
+    - Assignments: operation-research/assignments.md
+    - Exam: operation-research/exam.md
+    
   - C Programming:
     - Course Overview: programming-in-c/introduction.md
     - Programming: programming-in-c/programming.md
