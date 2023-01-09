@@ -8,6 +8,7 @@ if ('serviceWorker' in navigator) {
 
 window.MathJax = {
   tex: {
+    tags: 'ams',
     inlineMath: [["\\(", "\\)"]],
     displayMath: [["\\[", "\\]"]],
     processEscapes: true,
