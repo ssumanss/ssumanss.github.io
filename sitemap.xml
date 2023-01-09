@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sandeepsuman.com/complex-analysis/</loc>
+         <lastmod>2023-01-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sandeepsuman.com/complex-analysis/assignments/</loc>
          <lastmod>2023-01-09</lastmod>
          <changefreq>daily</changefreq>
@@ -22,11 +27,6 @@
     </url>
     <url>
          <loc>https://sandeepsuman.com/complex-analysis/cauchy-theorem/</loc>
-         <lastmod>2023-01-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sandeepsuman.com/complex-analysis/complex-analysis/</loc>
          <lastmod>2023-01-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -96,6 +96,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sandeepsuman.com/linear-algebra/</loc>
+         <lastmod>2023-01-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sandeepsuman.com/linear-algebra/21-23/</loc>
          <lastmod>2023-01-09</lastmod>
          <changefreq>daily</changefreq>
@@ -111,17 +116,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sandeepsuman.com/linear-algebra/introduction/</loc>
-         <lastmod>2023-01-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://sandeepsuman.com/linear-algebra/linear-equations/</loc>
          <lastmod>2023-01-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sandeepsuman.com/linear-algebra/matrix-linear-transformation/</loc>
+         <lastmod>2023-01-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sandeepsuman.com/operation-research/</loc>
          <lastmod>2023-01-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -156,11 +161,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sandeepsuman.com/operation-research/introduction/</loc>
-         <lastmod>2023-01-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://sandeepsuman.com/operation-research/kkt/</loc>
          <lastmod>2023-01-09</lastmod>
          <changefreq>daily</changefreq>
@@ -191,17 +191,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sandeepsuman.com/programming-in-c/</loc>
+         <lastmod>2023-01-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sandeepsuman.com/programming-in-c/19-21/</loc>
          <lastmod>2023-01-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sandeepsuman.com/programming-in-c/feature/</loc>
-         <lastmod>2023-01-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sandeepsuman.com/programming-in-c/introduction/</loc>
          <lastmod>2023-01-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
