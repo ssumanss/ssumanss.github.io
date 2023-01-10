@@ -57,9 +57,9 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  margin: 0 6px 6px 0;
-  cursor: help;
+  margin: 0 6px 6px 0; 
   opacity: .9;
+  pointer-events: none;
 }
 
 .nt-contribs .nt-initials {
