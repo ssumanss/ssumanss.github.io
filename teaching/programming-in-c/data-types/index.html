@@ -1,0 +1,473 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            Data Types      Sandeep Suman      </title>
+
+
+
+<meta name="description" content="Assistant Professor, University Department of Mathematics, Tilka Manjhi Bhagalpur University">
+
+
+
+
+
+
+
+  <link rel="canonical" href="https://sandeepsuman.com/teaching/programming-in-c/data-types/">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Sandeep Suman",
+      "url" : "https://sandeepsuman.com",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+<!-- Open Graph protocol data (https://ogp.me/), used by social media -->
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Sandeep Suman"> 
+<meta property="og:title" content="Data Types">
+
+
+
+  <meta property="og:url" content="https://sandeepsuman.com/teaching/programming-in-c/data-types/">
+
+
+
+
+
+<!-- end Open Graph protocol -->
+
+<link href="https://sandeepsuman.com/feed.xml" type="application/atom+xml" rel="alternate" title="Sandeep Suman Feed">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://sandeepsuman.com/assets/css/main.css">
+
+    
+
+<!-- start custom head snippets -->
+
+<!-- MathJax -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+<!-- Support for Academicons -->
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"></noscript>
+
+<!-- Support for Font Awesome -->
+ <link rel="preload" href="https://sandeepsuman.com/assets/css/fontawesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://sandeepsuman.com/assets/css/fontawesome.css"></noscript>
+
+<!-- favicon -->
+<link rel="icon" href="https://sandeepsuman.com/images/favicon.ico">
+<meta name="theme-color" content="var(--global-bg-color)"/>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><span class="navicon"></span></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg persist ">
+            <a href="https://sandeepsuman.com/">Sandeep Suman</a>
+          </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="https://sandeepsuman.com/">Home</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item selected">
+              <a href="https://sandeepsuman.com/teaching/">Teaching</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="https://sandeepsuman.com/cv/">CV</a>
+            </li>
+          
+          <li id="theme-toggle" class="masthead__menu-item persist tail">
+            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+          </li>
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+
+<nav class="nav__list">
+  
+  <ul>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/programming-in-c/"><span class="nav__sub-title">Course Overview</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/programming-in-c/programming/"><span class="nav__sub-title">Programming</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/programming-in-c/feature/"><span class="nav__sub-title">Feature of C</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/programming-in-c/data-types/"><span class="nav__sub-title">Data Types</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/programming-in-c/input-output/"><span class="nav__sub-title">Input Output</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/programming-in-c/arithmetic/"><span class="nav__sub-title">Arithmetic</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/programming-in-c/flow-chart/"><span class="nav__sub-title">Flow Chart</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/programming-in-c/19-21/"><span class="nav__sub-title">19-21</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Data Types">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Data Types
+</h1>
+          
+        
+        
+            
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <h1 id="data-types">Data Types</h1>
+
+<p>In C, data types refer to the type of data that a variable can hold. C has a variety of built-in data types for storing different types of data, including numbers, characters, and strings.</p>
+
+<p>Here are some of the most common data types in C:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">int</code>: used for storing integers (whole numbers)</li>
+  <li><code class="language-plaintext highlighter-rouge">float</code>: used for storing floating-point numbers (numbers with decimal points)</li>
+  <li><code class="language-plaintext highlighter-rouge">double</code>: used for storing double-precision floating-point numbers (larger and more precise than float)</li>
+  <li><code class="language-plaintext highlighter-rouge">char</code>: used for storing single characters</li>
+  <li><code class="language-plaintext highlighter-rouge">void</code>: used to represent the absence of a type</li>
+</ul>
+
+<p>C also supports arrays, structures, and unions, which allow developers to create complex data types by grouping together multiple variables of the same or different types.</p>
+
+<p>In C, it is important to choose the appropriate data type for a variable based on the type and range of values it will need to store. Using the correct data type can help ensure that the variable has enough storage space and can be processed efficiently.</p>
+
+<h2 id="integer">Integer</h2>
+
+<p>In C, an integer is a data type used for storing whole numbers (i.e., numbers without decimal points). Integers can be positive, negative, or zero.</p>
+
+<p>C has several different integer data types, including char, short, int, and long, which can store integers of different sizes and ranges. The type int is the most commonly used integer type in C and is typically the default type for integers. It is capable of storing values in the range of -2147483648 to 2147483647.</p>
+
+<p>Here is an example of how to declare and initialize an int variable in C:</p>
+
+<pre><code class="language-C">int age;
+age = 30;
+</code></pre>
+
+<p>In this example, the variable age is declared as an int and is initialized with the value 30.</p>
+
+<p>It is important to choose the appropriate integer data type for a variable based on the range of values it will need to store. Using a larger integer type (e.g., long) can allow a variable to store larger values, but may also use more memory and processing resources.</p>
+
+<h2 id="character">Character</h2>
+
+<p>In C, char is a data type used for storing single characters. A character is a single letter, digit, or symbol, and is represented as a small integer value in the computer’s memory.</p>
+
+<p>The char data type is typically used for storing characters and small integers that fit within the range of -128 to 127. It is a signed data type, which means it can store both positive and negative values.</p>
+
+<p>Here is an example of how to declare and initialize a char variable in C:</p>
+
+<pre><code class="language-C">char letter;
+letter = 'A';
+</code></pre>
+
+<p>In this example, the variable letter is declared as a char and is initialized with the value ‘A’.</p>
+
+<p>It is important to note that a char variable must be surrounded by single quotes when it is initialized with a character value. Double quotes are used to denote strings of characters.</p>
+
+<p>The char data type is often used in C for storing characters and small integers that do not require a lot of storage space. It is also used for storing characters that are part of a larger string of text.</p>
+
+<h2 id="floatdecimal-numbers">Float(Decimal Numbers)</h2>
+
+<p>In C, float is a data type used for storing floating-point numbers (i.e., numbers with decimal points). Floating-point numbers are used to represent values that are not always whole numbers, such as 3.14 (pi) or 0.5 (half).</p>
+
+<p>The float data type is a single-precision data type, which means it can store numbers with up to 6-7 digits of precision. It is capable of storing values in the range of approximately 3.4 x 10^-38 to 3.4 x 10^38.</p>
+
+<p>Here is an example of how to declare and initialize a float variable in C:</p>
+
+<pre><code class="language-C">float pi;
+pi = 3.14;
+</code></pre>
+
+<p>In this example, the variable pi is declared as a float and is initialized with the value 3.14.</p>
+
+<p>It is important to note that floating-point values in C must be written with a decimal point and must not include commas.</p>
+
+<p>The float data type is often used in C for storing values that require a higher level of precision than integers, but do not need the range or precision of the double data type.</p>
+
+<h3 id="double">Double</h3>
+
+<p>In C, double is a data type used for storing double-precision floating-point numbers. Double-precision numbers are used to represent values that are not always whole numbers, such as 3.14 (pi) or 0.5 (half), with a higher level of precision than single-precision floating-point numbers.</p>
+
+<p>The double data type is a double-precision data type, which means it can store numbers with up to 15-16 digits of precision. It is capable of storing values in the range of approximately 1.7 x 10^-308 to 1.7 x 10^308.</p>
+
+<p>Here is an example of how to declare and initialize a double variable in C:</p>
+
+<pre><code class="language-C">double pi;
+pi = 3.14159265;
+</code></pre>
+
+<p>In this example, the variable pi is declared as a double and is initialized with the value 3.14159265.</p>
+
+<p>It is important to note that floating-point values in C must be written with a decimal point and must not include commas.</p>
+
+<p>The double data type is often used in C for storing values that require a higher level of precision than single-precision floating-point numbers. It is also the default data type for floating-point values in C.</p>
+
+
+        
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- Support for MathJax -->
+<script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
+
+<!-- end custom footer snippets -->
+
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+      <li><a href="https://github.com/ssumanss"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="https://sandeepsuman.com/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">
+  &copy; 2026 Sandeep Suman, Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
+  Site last updated 2026-07-17, <a href="/sitemap/" style="text-transform: uppercase;">Sitemap</a>
+</div>
+
+      </footer>
+    </div>
+
+    <script type="module" src="https://sandeepsuman.com/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,1049 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            Simplex Algorithm      Sandeep Suman      </title>
+
+
+
+<meta name="description" content="Assistant Professor, University Department of Mathematics, Tilka Manjhi Bhagalpur University">
+
+
+
+
+
+
+
+  <link rel="canonical" href="https://sandeepsuman.com/teaching/operation-research/simplex/">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Sandeep Suman",
+      "url" : "https://sandeepsuman.com",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+<!-- Open Graph protocol data (https://ogp.me/), used by social media -->
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Sandeep Suman"> 
+<meta property="og:title" content="Simplex Algorithm">
+
+
+
+  <meta property="og:url" content="https://sandeepsuman.com/teaching/operation-research/simplex/">
+
+
+
+
+
+<!-- end Open Graph protocol -->
+
+<link href="https://sandeepsuman.com/feed.xml" type="application/atom+xml" rel="alternate" title="Sandeep Suman Feed">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://sandeepsuman.com/assets/css/main.css">
+
+    
+
+<!-- start custom head snippets -->
+
+<!-- MathJax -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+<!-- Support for Academicons -->
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"></noscript>
+
+<!-- Support for Font Awesome -->
+ <link rel="preload" href="https://sandeepsuman.com/assets/css/fontawesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://sandeepsuman.com/assets/css/fontawesome.css"></noscript>
+
+<!-- favicon -->
+<link rel="icon" href="https://sandeepsuman.com/images/favicon.ico">
+<meta name="theme-color" content="var(--global-bg-color)"/>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><span class="navicon"></span></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg persist ">
+            <a href="https://sandeepsuman.com/">Sandeep Suman</a>
+          </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="https://sandeepsuman.com/">Home</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item selected">
+              <a href="https://sandeepsuman.com/teaching/">Teaching</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="https://sandeepsuman.com/cv/">CV</a>
+            </li>
+          
+          <li id="theme-toggle" class="masthead__menu-item persist tail">
+            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+          </li>
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+
+<nav class="nav__list">
+  
+  <ul>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/"><span class="nav__sub-title">Course Introduction</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/simplex/"><span class="nav__sub-title">Simplex Algorithm</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/scipy/"><span class="nav__sub-title">Scipy</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/game/"><span class="nav__sub-title">Game Theory Introduction</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/basic-definitions/"><span class="nav__sub-title">Game Theory Definitions</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/dominant-strategy/"><span class="nav__sub-title">Dominant Strategy</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/maximin-strategy/"><span class="nav__sub-title">Maximin Strategy</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/unconstrained-optimization/"><span class="nav__sub-title">Unconstrained Optimization</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/equality-constraints/"><span class="nav__sub-title">Equality Constraints</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/kkt/"><span class="nav__sub-title">KKT Conditions</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/kkt1/"><span class="nav__sub-title">KKT Conditions (alt)</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/assignments/"><span class="nav__sub-title">Assignments</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/exam/"><span class="nav__sub-title">Exam</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Simplex Algorithm">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Simplex Algorithm
+</h1>
+          
+        
+        
+            
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>Solve the following optimization problem
+\(\begin{alignat*}{2}
+    &amp; \text{maximize: } &amp;&amp; c^Tx \\
+    &amp; \text{subject to: } &amp;&amp; 
+        \begin{aligned}[t]
+             Ax &amp;\leq b\\
+              x &amp;\geq 0 
+        \end{aligned}
+\end{alignat*}\)</p>
+
+<h3 id="concrete-problem">Concrete Problem</h3>
+
+\[\begin{alignat*}{2}
+    &amp; \text{maximize: } &amp;&amp; z = 2x + 3y\\
+    &amp; \text{subject to: } &amp;&amp; 
+        \begin{aligned}[t]
+             x + 3y  &amp;\leq 12 \\
+            3x + 2y  &amp;\leq 12 \\
+              x, y &amp;\geq 0 
+        \end{aligned}
+\end{alignat*}\]
+
+<h3 id="step-i">Step I</h3>
+
+<p>Fromulating the problem and creating the first table for simplex algorithm.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Basic</th>
+      <th>$x$</th>
+      <th>$y$</th>
+      <th>$s_{1}$</th>
+      <th>$s_{2}$</th>
+      <th>Solution</th>
+      <th>Ratio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$z$</td>
+      <td>$-2$</td>
+      <td>$-3$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$s_{1}$</td>
+      <td>$1$</td>
+      <td>$3$</td>
+      <td>$1$</td>
+      <td>$0$</td>
+      <td>$12$</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$s_{2}$</td>
+      <td>$3$</td>
+      <td>$2$</td>
+      <td>$0$</td>
+      <td>$1$</td>
+      <td>$12$</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-ii">Step II</h3>
+
+<p>We have to choose an entering variable which will increase the value of objective. So we choose any variable with negative coefficient. Here we choose $y$.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Basic</th>
+      <th>$x$</th>
+      <th>$y$</th>
+      <th>$s_{1}$</th>
+      <th>$s_{2}$</th>
+      <th>Solution</th>
+      <th>Ratio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$z$</td>
+      <td>$-2$</td>
+      <td>$-3$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+    </tr>
+    <tr>
+      <td>$s_{1}$</td>
+      <td>$1$</td>
+      <td>$3$</td>
+      <td>$1$</td>
+      <td>$0$</td>
+      <td>$12$</td>
+      <td>$4$</td>
+    </tr>
+    <tr>
+      <td>$s_{2}$</td>
+      <td>$3$</td>
+      <td>$2$</td>
+      <td>$0$</td>
+      <td>$1$</td>
+      <td>$12$</td>
+      <td>$6$</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-iii">Step III</h3>
+
+<p>We have to choose a leaving variable based on ratio analysis. Here we choose the variable with least positive ratio. In this table $s_1$ has the least positive ratio, so it will leave. Now we have to perform the pivoting step.</p>
+
+<h3 id="step-iv">Step IV</h3>
+
+<p>After pivoting we get a new table. Where we can repreat the above steps again and again till the simplex algorithm terminate. In ideal case we get no entering varable.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Basic</th>
+      <th>$x$</th>
+      <th>$y$</th>
+      <th>$s_{1}$</th>
+      <th>$s_{2}$</th>
+      <th>Solution</th>
+      <th>Ratio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$z$</td>
+      <td>$-1$</td>
+      <td>$0$</td>
+      <td>$1$</td>
+      <td>$0$</td>
+      <td>$12$</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$y$</td>
+      <td>$\frac{1}{3}$</td>
+      <td>$1$</td>
+      <td>$\frac{1}{3}$</td>
+      <td>$0$</td>
+      <td>$4$</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$s_{2}$</td>
+      <td>$\frac{7}{3}$</td>
+      <td>$0$</td>
+      <td>$- \frac{2}{3}$</td>
+      <td>$1$</td>
+      <td>$4$</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Basic</th>
+      <th>$x$</th>
+      <th>$y$</th>
+      <th>$s_{1}$</th>
+      <th>$s_{2}$</th>
+      <th>Solution</th>
+      <th>Ratio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$z$</td>
+      <td>$-1$</td>
+      <td>$0$</td>
+      <td>$1$</td>
+      <td>$0$</td>
+      <td>$12$</td>
+      <td>$-12$</td>
+    </tr>
+    <tr>
+      <td>$y$</td>
+      <td>$\frac{1}{3}$</td>
+      <td>$1$</td>
+      <td>$\frac{1}{3}$</td>
+      <td>$0$</td>
+      <td>$4$</td>
+      <td>$12$</td>
+    </tr>
+    <tr>
+      <td>$s_{2}$</td>
+      <td>$\frac{7}{3}$</td>
+      <td>$0$</td>
+      <td>$- \frac{2}{3}$</td>
+      <td>$1$</td>
+      <td>$4$</td>
+      <td>$\frac{12}{7}$</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Basic</th>
+      <th>$x$</th>
+      <th>$y$</th>
+      <th>$s_{1}$</th>
+      <th>$s_{2}$</th>
+      <th>Solution</th>
+      <th>Ratio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$z$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$\frac{5}{7}$</td>
+      <td>$\frac{3}{7}$</td>
+      <td>$\frac{96}{7}$</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$y$</td>
+      <td>$0$</td>
+      <td>$1$</td>
+      <td>$\frac{3}{7}$</td>
+      <td>$- \frac{1}{7}$</td>
+      <td>$\frac{24}{7}$</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$x$</td>
+      <td>$1$</td>
+      <td>$0$</td>
+      <td>$- \frac{2}{7}$</td>
+      <td>$\frac{3}{7}$</td>
+      <td>$\frac{12}{7}$</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Finally we got a table with all non-negaitve coefficient corresponding to $z$ variable. The solution of this problem is $96/7$ at the point $(12/7, 24/7)$</p>
+
+<h3 id="problem-2">Problem 2</h3>
+
+<p>Solve the following optimization problem.</p>
+
+\[\begin{alignat*}{2}
+    &amp; \text{maximize: } &amp;&amp; z = 2x_1 + x_2 - 3x_3 + 5x_4 \\
+    &amp; \text{subject to: } &amp;&amp; 
+        \begin{aligned}[t]
+             x_1 + 2x_2 + 2x_3 + 4x_4  &amp;\leq 40 \\
+            2x_1 -  x_2 +  x_3 + 2x_4  &amp;\leq  8 \\
+            4x_1 - 2x_2 +  x_3 -  x_4  &amp;\leq 10 \\
+                    x_1, x_2, x_3, x_4 &amp;\geq 0 
+        \end{aligned}
+\end{alignat*}\]
+
+<p>$\displaystyle \left[\begin{matrix}-2 &amp; -1 &amp; 3 &amp; -5 &amp; 0 &amp; 0 &amp; 0 &amp; 0\1 &amp; 2 &amp; 2 &amp; 4 &amp; 1 &amp; 0 &amp; 0 &amp; 40\2 &amp; -1 &amp; 1 &amp; 2 &amp; 0 &amp; 1 &amp; 0 &amp; 8\4 &amp; -2 &amp; 1 &amp; -1 &amp; 0 &amp; 0 &amp; 1 &amp; 10\end{matrix}\right]$</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Basic</th>
+      <th>$x_{1}$</th>
+      <th>$x_{2}$</th>
+      <th>$x_{3}$</th>
+      <th>$x_{4}$</th>
+      <th>$s_{1}$</th>
+      <th>$s_{2}$</th>
+      <th>$s_{3}$</th>
+      <th>Solution</th>
+      <th>Ratio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$z$</td>
+      <td>$-2$</td>
+      <td>$-1$</td>
+      <td>$3$</td>
+      <td>$-5$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$s_{1}$</td>
+      <td>$1$</td>
+      <td>$2$</td>
+      <td>$2$</td>
+      <td>$4$</td>
+      <td>$1$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$40$</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$s_{2}$</td>
+      <td>$2$</td>
+      <td>$-1$</td>
+      <td>$1$</td>
+      <td>$2$</td>
+      <td>$0$</td>
+      <td>$1$</td>
+      <td>$0$</td>
+      <td>$8$</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$s_{3}$</td>
+      <td>$4$</td>
+      <td>$-2$</td>
+      <td>$1$</td>
+      <td>$-1$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$1$</td>
+      <td>$10$</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Basic</th>
+      <th>$x_{1}$</th>
+      <th>$x_{2}$</th>
+      <th>$x_{3}$</th>
+      <th>$x_{4}$</th>
+      <th>$s_{1}$</th>
+      <th>$s_{2}$</th>
+      <th>$s_{3}$</th>
+      <th>Solution</th>
+      <th>Ratio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$z$</td>
+      <td>$-2$</td>
+      <td>$-1$</td>
+      <td>$3$</td>
+      <td>$-5$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+    </tr>
+    <tr>
+      <td>$s_{1}$</td>
+      <td>$1$</td>
+      <td>$2$</td>
+      <td>$2$</td>
+      <td>$4$</td>
+      <td>$1$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$40$</td>
+      <td>$10$</td>
+    </tr>
+    <tr>
+      <td>$s_{2}$</td>
+      <td>$2$</td>
+      <td>$-1$</td>
+      <td>$1$</td>
+      <td>$2$</td>
+      <td>$0$</td>
+      <td>$1$</td>
+      <td>$0$</td>
+      <td>$8$</td>
+      <td>$4$</td>
+    </tr>
+    <tr>
+      <td>$s_{3}$</td>
+      <td>$4$</td>
+      <td>$-2$</td>
+      <td>$1$</td>
+      <td>$-1$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$1$</td>
+      <td>$10$</td>
+      <td>$-10$</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Basic</th>
+      <th>$x_{1}$</th>
+      <th>$x_{2}$</th>
+      <th>$x_{3}$</th>
+      <th>$x_{4}$</th>
+      <th>$s_{1}$</th>
+      <th>$s_{2}$</th>
+      <th>$s_{3}$</th>
+      <th>Solution</th>
+      <th>Ratio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$z$</td>
+      <td>$3$</td>
+      <td>$- \frac{7}{2}$</td>
+      <td>$\frac{11}{2}$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$\frac{5}{2}$</td>
+      <td>$0$</td>
+      <td>$20$</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$s_{1}$</td>
+      <td>$-3$</td>
+      <td>$4$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$1$</td>
+      <td>$-2$</td>
+      <td>$0$</td>
+      <td>$24$</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$x_{4}$</td>
+      <td>$1$</td>
+      <td>$- \frac{1}{2}$</td>
+      <td>$\frac{1}{2}$</td>
+      <td>$1$</td>
+      <td>$0$</td>
+      <td>$\frac{1}{2}$</td>
+      <td>$0$</td>
+      <td>$4$</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$s_{3}$</td>
+      <td>$5$</td>
+      <td>$- \frac{5}{2}$</td>
+      <td>$\frac{3}{2}$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$\frac{1}{2}$</td>
+      <td>$1$</td>
+      <td>$14$</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Basic</th>
+      <th>$x_{1}$</th>
+      <th>$x_{2}$</th>
+      <th>$x_{3}$</th>
+      <th>$x_{4}$</th>
+      <th>$s_{1}$</th>
+      <th>$s_{2}$</th>
+      <th>$s_{3}$</th>
+      <th>Solution</th>
+      <th>Ratio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$z$</td>
+      <td>$3$</td>
+      <td>$- \frac{7}{2}$</td>
+      <td>$\frac{11}{2}$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$\frac{5}{2}$</td>
+      <td>$0$</td>
+      <td>$20$</td>
+      <td>$- \frac{40}{7}$</td>
+    </tr>
+    <tr>
+      <td>$s_{1}$</td>
+      <td>$-3$</td>
+      <td>$4$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$1$</td>
+      <td>$-2$</td>
+      <td>$0$</td>
+      <td>$24$</td>
+      <td>$6$</td>
+    </tr>
+    <tr>
+      <td>$x_{4}$</td>
+      <td>$1$</td>
+      <td>$- \frac{1}{2}$</td>
+      <td>$\frac{1}{2}$</td>
+      <td>$1$</td>
+      <td>$0$</td>
+      <td>$\frac{1}{2}$</td>
+      <td>$0$</td>
+      <td>$4$</td>
+      <td>$-8$</td>
+    </tr>
+    <tr>
+      <td>$s_{3}$</td>
+      <td>$5$</td>
+      <td>$- \frac{5}{2}$</td>
+      <td>$\frac{3}{2}$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$\frac{1}{2}$</td>
+      <td>$1$</td>
+      <td>$14$</td>
+      <td>$- \frac{28}{5}$</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Basic</th>
+      <th>$x_{1}$</th>
+      <th>$x_{2}$</th>
+      <th>$x_{3}$</th>
+      <th>$x_{4}$</th>
+      <th>$s_{1}$</th>
+      <th>$s_{2}$</th>
+      <th>$s_{3}$</th>
+      <th>Solution</th>
+      <th>Ratio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$z$</td>
+      <td>$\frac{3}{8}$</td>
+      <td>$0$</td>
+      <td>$\frac{11}{2}$</td>
+      <td>$0$</td>
+      <td>$\frac{7}{8}$</td>
+      <td>$\frac{3}{4}$</td>
+      <td>$0$</td>
+      <td>$41$</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$x_{2}$</td>
+      <td>$- \frac{3}{4}$</td>
+      <td>$1$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$\frac{1}{4}$</td>
+      <td>$- \frac{1}{2}$</td>
+      <td>$0$</td>
+      <td>$6$</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$x_{4}$</td>
+      <td>$\frac{5}{8}$</td>
+      <td>$0$</td>
+      <td>$\frac{1}{2}$</td>
+      <td>$1$</td>
+      <td>$\frac{1}{8}$</td>
+      <td>$\frac{1}{4}$</td>
+      <td>$0$</td>
+      <td>$7$</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$s_{3}$</td>
+      <td>$\frac{25}{8}$</td>
+      <td>$0$</td>
+      <td>$\frac{3}{2}$</td>
+      <td>$0$</td>
+      <td>$\frac{5}{8}$</td>
+      <td>$- \frac{3}{4}$</td>
+      <td>$1$</td>
+      <td>$29$</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Since all the coefficient corresponding to $z$ is non-negative, hence there will be no entering variable. The simplex algorithm will terminate. The objective is $41$ at the point $(0,6,0,7)$.</p>
+
+
+        
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- Support for MathJax -->
+<script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
+
+<!-- end custom footer snippets -->
+
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+      <li><a href="https://github.com/ssumanss"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="https://sandeepsuman.com/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">
+  &copy; 2026 Sandeep Suman, Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
+  Site last updated 2026-07-17, <a href="/sitemap/" style="text-transform: uppercase;">Sitemap</a>
+</div>
+
+      </footer>
+    </div>
+
+    <script type="module" src="https://sandeepsuman.com/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
+

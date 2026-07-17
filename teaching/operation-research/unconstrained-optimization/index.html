@@ -1,0 +1,557 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            Unconstrained Optimization      Sandeep Suman      </title>
+
+
+
+<meta name="description" content="Assistant Professor, University Department of Mathematics, Tilka Manjhi Bhagalpur University">
+
+
+
+
+
+
+
+  <link rel="canonical" href="https://sandeepsuman.com/teaching/operation-research/unconstrained-optimization/">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Sandeep Suman",
+      "url" : "https://sandeepsuman.com",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+<!-- Open Graph protocol data (https://ogp.me/), used by social media -->
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Sandeep Suman"> 
+<meta property="og:title" content="Unconstrained Optimization">
+
+
+
+  <meta property="og:url" content="https://sandeepsuman.com/teaching/operation-research/unconstrained-optimization/">
+
+
+
+
+
+<!-- end Open Graph protocol -->
+
+<link href="https://sandeepsuman.com/feed.xml" type="application/atom+xml" rel="alternate" title="Sandeep Suman Feed">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://sandeepsuman.com/assets/css/main.css">
+
+    
+
+<!-- start custom head snippets -->
+
+<!-- MathJax -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+<!-- Support for Academicons -->
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"></noscript>
+
+<!-- Support for Font Awesome -->
+ <link rel="preload" href="https://sandeepsuman.com/assets/css/fontawesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://sandeepsuman.com/assets/css/fontawesome.css"></noscript>
+
+<!-- favicon -->
+<link rel="icon" href="https://sandeepsuman.com/images/favicon.ico">
+<meta name="theme-color" content="var(--global-bg-color)"/>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><span class="navicon"></span></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg persist ">
+            <a href="https://sandeepsuman.com/">Sandeep Suman</a>
+          </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="https://sandeepsuman.com/">Home</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item selected">
+              <a href="https://sandeepsuman.com/teaching/">Teaching</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="https://sandeepsuman.com/cv/">CV</a>
+            </li>
+          
+          <li id="theme-toggle" class="masthead__menu-item persist tail">
+            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+          </li>
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+
+<nav class="nav__list">
+  
+  <ul>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/"><span class="nav__sub-title">Course Introduction</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/simplex/"><span class="nav__sub-title">Simplex Algorithm</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/scipy/"><span class="nav__sub-title">Scipy</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/game/"><span class="nav__sub-title">Game Theory Introduction</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/basic-definitions/"><span class="nav__sub-title">Game Theory Definitions</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/dominant-strategy/"><span class="nav__sub-title">Dominant Strategy</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/maximin-strategy/"><span class="nav__sub-title">Maximin Strategy</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/unconstrained-optimization/"><span class="nav__sub-title">Unconstrained Optimization</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/equality-constraints/"><span class="nav__sub-title">Equality Constraints</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/kkt/"><span class="nav__sub-title">KKT Conditions</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/kkt1/"><span class="nav__sub-title">KKT Conditions (alt)</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/assignments/"><span class="nav__sub-title">Assignments</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/exam/"><span class="nav__sub-title">Exam</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Unconstrained Optimization">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Unconstrained Optimization
+</h1>
+          
+        
+        
+            
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>Find the maxima of the following function</p>
+
+\[f(x,y)=x^4 −x^2y+y^2 −3y+4\]
+
+<h3 id="step-i">Step I</h3>
+
+<p>Defining variable and function.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">sp</span><span class="p">.</span><span class="nf">var</span><span class="p">(</span><span class="sh">'</span><span class="s">x,y</span><span class="sh">'</span><span class="p">,</span><span class="n">real</span><span class="o">=</span><span class="bp">True</span><span class="p">);</span>
+<span class="n">f</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">4</span> <span class="o">-</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">y</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">3</span><span class="o">*</span><span class="n">y</span> <span class="o">+</span><span class="mi">4</span>
+<span class="n">f</span>
+</code></pre></div></div>
+
+<p>$\displaystyle x^{4} - x^{2} y + y^{2} - 3 y + 4$</p>
+
+<h3 id="step-ii">Step II</h3>
+
+<p>Finding gradiant of the function.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">gradf</span> <span class="o">=</span> <span class="p">[</span><span class="n">sp</span><span class="p">.</span><span class="nf">diff</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="p">[</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">]]</span> <span class="c1"># gradient of Lagrangian w.r.t. (x,y)
+</span></code></pre></div></div>
+
+<p>$\displaystyle 4 x^{3} - 2 x y$</p>
+
+<p>$\displaystyle - x^{2} + 2 y - 3$</p>
+
+<h3 id="step-iii">Step III</h3>
+
+<p>Finding the criticlal points by setting the gradient equal to $0$. Critical points is obtained using</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">stationary_points</span> <span class="o">=</span> <span class="n">sp</span><span class="p">.</span><span class="nf">solve</span><span class="p">(</span><span class="n">gradf</span><span class="p">,</span> <span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">],</span> <span class="nb">dict</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span> <span class="c1"># solve the KKT equations
+</span><span class="n">stationary_points</span> 
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>$x$</th>
+      <th>$y$</th>
+      <th>Obj</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$-1$</td>
+      <td>$2$</td>
+      <td>$1$</td>
+    </tr>
+    <tr>
+      <td>$0$</td>
+      <td>$\frac{3}{2}$</td>
+      <td>$\frac{7}{4}$</td>
+    </tr>
+    <tr>
+      <td>$1$</td>
+      <td>$2$</td>
+      <td>$1$</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-iv">Step IV</h3>
+
+<p>Computing the sign of the Hessian at each of the critical points. The Hessian is computed as</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">H</span> <span class="o">=</span> <span class="n">sp</span><span class="p">.</span><span class="nf">hessian</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">))</span>
+<span class="n">H</span>
+</code></pre></div></div>
+
+<p>$\displaystyle \left[\begin{matrix}12 x^{2} - 2 y &amp; - 2 x\- 2 x &amp; 2\end{matrix}\right]$</p>
+
+<p>The Eigenvalues of Hessina Matrix will determine weather a point is maxima or minima</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">sign</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="n">A</span><span class="p">.</span><span class="nf">eigenvals</span><span class="p">().</span><span class="nf">keys</span><span class="p">()</span>
+    <span class="k">if</span> <span class="nf">any</span><span class="p">(</span><span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">d</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nf">any</span><span class="p">(</span><span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">d</span><span class="p">):</span>
+            <span class="k">return</span> <span class="sh">"</span><span class="s">None</span><span class="sh">"</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="sh">"</span><span class="s">Minima</span><span class="sh">"</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sh">"</span><span class="s">Maxima</span><span class="sh">"</span>
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>$x$</th>
+      <th>$y$</th>
+      <th>Obj</th>
+      <th>Hessian</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$-1$</td>
+      <td>$2$</td>
+      <td>$1$</td>
+      <td>Minima</td>
+    </tr>
+    <tr>
+      <td>$0$</td>
+      <td>$\frac{3}{2}$</td>
+      <td>$\frac{7}{4}$</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>$1$</td>
+      <td>$2$</td>
+      <td>$1$</td>
+      <td>Minima</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Conclusion:</strong> The points $(-1,2)$ and $(1,2)$ are the local minima(which is also global) of the given function.</p>
+
+
+        
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- Support for MathJax -->
+<script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
+
+<!-- end custom footer snippets -->
+
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+      <li><a href="https://github.com/ssumanss"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="https://sandeepsuman.com/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">
+  &copy; 2026 Sandeep Suman, Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
+  Site last updated 2026-07-17, <a href="/sitemap/" style="text-transform: uppercase;">Sitemap</a>
+</div>
+
+      </footer>
+    </div>
+
+    <script type="module" src="https://sandeepsuman.com/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
+

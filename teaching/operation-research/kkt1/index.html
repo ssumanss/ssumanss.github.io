@@ -1,0 +1,520 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>            KKT Conditions (alt)      Sandeep Suman      </title>
+
+
+
+<meta name="description" content="Assistant Professor, University Department of Mathematics, Tilka Manjhi Bhagalpur University">
+
+
+
+
+
+
+
+  <link rel="canonical" href="https://sandeepsuman.com/teaching/operation-research/kkt1/">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Sandeep Suman",
+      "url" : "https://sandeepsuman.com",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+<!-- Open Graph protocol data (https://ogp.me/), used by social media -->
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Sandeep Suman"> 
+<meta property="og:title" content="KKT Conditions (alt)">
+
+
+
+  <meta property="og:url" content="https://sandeepsuman.com/teaching/operation-research/kkt1/">
+
+
+
+
+
+<!-- end Open Graph protocol -->
+
+<link href="https://sandeepsuman.com/feed.xml" type="application/atom+xml" rel="alternate" title="Sandeep Suman Feed">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://sandeepsuman.com/assets/css/main.css">
+
+    
+
+<!-- start custom head snippets -->
+
+<!-- MathJax -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+<!-- Support for Academicons -->
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"></noscript>
+
+<!-- Support for Font Awesome -->
+ <link rel="preload" href="https://sandeepsuman.com/assets/css/fontawesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://sandeepsuman.com/assets/css/fontawesome.css"></noscript>
+
+<!-- favicon -->
+<link rel="icon" href="https://sandeepsuman.com/images/favicon.ico">
+<meta name="theme-color" content="var(--global-bg-color)"/>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><span class="navicon"></span></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg persist ">
+            <a href="https://sandeepsuman.com/">Sandeep Suman</a>
+          </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="https://sandeepsuman.com/">Home</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item selected">
+              <a href="https://sandeepsuman.com/teaching/">Teaching</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="https://sandeepsuman.com/cv/">CV</a>
+            </li>
+          
+          <li id="theme-toggle" class="masthead__menu-item persist tail">
+            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+          </li>
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+
+<nav class="nav__list">
+  
+  <ul>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/"><span class="nav__sub-title">Course Introduction</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/simplex/"><span class="nav__sub-title">Simplex Algorithm</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/scipy/"><span class="nav__sub-title">Scipy</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/game/"><span class="nav__sub-title">Game Theory Introduction</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/basic-definitions/"><span class="nav__sub-title">Game Theory Definitions</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/dominant-strategy/"><span class="nav__sub-title">Dominant Strategy</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/maximin-strategy/"><span class="nav__sub-title">Maximin Strategy</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/unconstrained-optimization/"><span class="nav__sub-title">Unconstrained Optimization</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/equality-constraints/"><span class="nav__sub-title">Equality Constraints</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/kkt/"><span class="nav__sub-title">KKT Conditions</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/kkt1/"><span class="nav__sub-title">KKT Conditions (alt)</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/assignments/"><span class="nav__sub-title">Assignments</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://sandeepsuman.com/teaching/operation-research/exam/"><span class="nav__sub-title">Exam</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="KKT Conditions (alt)">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">KKT Conditions (alt)
+</h1>
+          
+        
+        
+            
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>Solve the following optimization problem
+\(\begin{alignat*}{2}
+    &amp; \text{maximize: } &amp;&amp; xy \\
+    &amp; \text{subject to: } &amp;&amp; 
+        \begin{aligned}[t]
+             x+y^2 &amp;\leq 2\\
+            x,y &amp;\geq 0 
+        \end{aligned}
+\end{alignat*}\)</p>
+
+<h3 id="step-i">Step I</h3>
+
+<p>We try to draw the feasible region.</p>
+
+<p><img src="/assets/teaching/operation-research/kkt1_files/kkt1_2_0.png" alt="png" /></p>
+
+<h3 id="step-ii">Step II</h3>
+
+<p>Defining variable and functions.</p>
+
+<p>$\displaystyle 
+f = x y<br />
+g_1 = - x - y^{2} + 2<br />
+g_2 = y<br />
+g_3 = x
+$</p>
+
+<h3 id="step-iii">Step III</h3>
+
+<p>Forming the Lagrangian.</p>
+
+<p>The lagrangian $L=\lambda_{1} \left(- x - y^{2} + 2\right) + \lambda_{2} y + \lambda_{3} x + \lambda_{4} x + x y$</p>
+
+<h3 id="step-iv">Step IV</h3>
+
+<p>We will find the KKT equations, here we first solve only equalities. Later we use inequalities to remove extra points.</p>
+
+<p>$\displaystyle - \lambda_{1} + \lambda_{3} + y= 0 \- 2 \lambda_{1} y + \lambda_{2} + x= 0 \\lambda_{1} \left(- x - y^{2} + 2\right)= 0 \\lambda_{2} y= 0 \\lambda_{3} x= 0 \$</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>$x$</th>
+      <th>$y$</th>
+      <th>$\lambda_{1}$</th>
+      <th>$\lambda_{2}$</th>
+      <th>$\lambda_{3}$</th>
+      <th>Obj</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+    </tr>
+    <tr>
+      <td>$\frac{4}{3}$</td>
+      <td>$- \frac{\sqrt{6}}{3}$</td>
+      <td>$- \frac{\sqrt{6}}{3}$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$- \frac{4 \sqrt{6}}{9}$</td>
+    </tr>
+    <tr>
+      <td>$\frac{4}{3}$</td>
+      <td>$\frac{\sqrt{6}}{3}$</td>
+      <td>$\frac{\sqrt{6}}{3}$</td>
+      <td>$0$</td>
+      <td>$0$</td>
+      <td>$\frac{4 \sqrt{6}}{9}$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Conclusion:</strong> Since $\lambda$’s must be nonnegative, hence we have to discard the second point. As both the point lies in the feasible region, they are local maxima, but the second point is global maxima.</p>
+
+
+        
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- Support for MathJax -->
+<script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
+
+<!-- end custom footer snippets -->
+
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+      <li><a href="https://github.com/ssumanss"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="https://sandeepsuman.com/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">
+  &copy; 2026 Sandeep Suman, Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
+  Site last updated 2026-07-17, <a href="/sitemap/" style="text-transform: uppercase;">Sitemap</a>
+</div>
+
+      </footer>
+    </div>
+
+    <script type="module" src="https://sandeepsuman.com/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
+
